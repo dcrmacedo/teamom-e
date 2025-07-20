@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para a mulher mais Batalhadora do mundo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', cursive;
+      background: #ffd6e7;
+      overflow-x: hidden;
+    }
+
+    .floating-images {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .floating-image {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      animation: float 10s linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    .intro {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffd6e7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      transition: opacity 1s ease;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .intro.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .intro h1 {
+      color: #b30059;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #b30059;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    @media (min-width: 450px) {
+      header {
+        font-size: 2.5rem;
+      }
+    }
+
+    .slideshow {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .slides {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+
+    .slides img,
+    .slides video {
+      width: 100%;
+      display: none;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: block;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .btn:hover {
+      background-color: #d40000;
+    }
+
+    .final-message {
+      text-align: center;
+      margin: 3rem 1rem 0 1rem;
+      font-size: 1.8rem;
+      color: #0f0f0fe1;
+      font-weight: bold;
+    }
+
+    .final-message .sub {
+      display: block;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #800040;
+    }
+  </style>
+</head>
+<body>
+  <div class="floating-images" id="floating-images"></div>
+
+  <div class="intro" id="intro">
+    <h1> 👩‍👧‍👦❤️</h1>
+    <button class="btn" onclick="startPresentation()">Click Aqui</button>
+  </div>
+
+  <header>
+    Nós te amamos muito Mãe ❤️
+  </header>
+
+  <div class="slideshow">
+    <div class="slides" id="slides">
+      <img src="./pasta/01.jpeg" alt="Foto 1">
+      <img src="./pasta/02.jpeg" alt="Foto 2">
+      <video src="./pasta/03.mp4" autoplay muted loop></video>
+      <video src="./pasta/04.mp4" autoplay muted loop></video>
+      <img src="./pasta/nv02.png" alt="Foto 3">
+      <videos src="./pasta/14.mp4" autoplay muted loop></video>
+      <img src="./pasta/06.jpeg" alt="Foto 5">
+      <video src="./pasta/08.mp4" autoplay muted loop></video>
+      <img src="./pasta/10.jpeg" alt="Foto 6">
+      <img src="./pasta/nv04.png  " alt="Foto 7">
+      <img src="./pasta/05.jpeg" alt="Foto 8">
+      <video src="./pasta/18.mp4" autoplay muted loop></video>
+      <img src="./pasta/07.jpeg" alt="Foto 10">
+      <img src="./pasta/nv0.png" alt="Foto 11">
+      <img src="./pasta/13.jpeg" alt="Foto 12">
+      <img src="./pasta/nv01.png" alt="Foto 13">
+      <img src="./pasta/nv03.png" alt="Foto 13">
+      <video src="./pasta/15.mp4" autoplay muted loop></video>
+      <video src="./pasta/16.mp4" autoplay muted loop></video>
+      <video src="./pasta/17.mp4" autoplay muted loop></video> 
+      <img src="./pasta/12.jpeg" alt="foto final">
+    </div>
+  </div>
+
+  <div class="final-message text-align:center">
+   Mãe, você é tudo pra gente<br>
+Não existem palavras suficientes para descrever o quanto a senhora é importante nas nossas vidas. <br> 
+Desde que a gente se entende por gente, a senhora sempre esteve ao nosso lado, com amor, paciência e
+uma força que admiramos todos os dias.<br>
+Nos ensinou o que é ter caráter, guiou quando estivemos perdido, torcendo pela gente, cuidando, acreditando.
+Mãe, você é o meu exemplo, nossa base, porto seguro. <br> 
+Tudo o que somos hoje tem um pouco (ou muito) de você.E mesmo que a gente nem sempre consiga demonstrar, saiba que carregamos um amor imenso por você em nossos corações,<br>
+ todos os dias. Se a gente pudesse escolher mil vezes, a gente escolheria ser suas filhas em todas elas.
+Obrigado por tudo. Te amamos com todo o nosso coração.
+
+    <span class="sub"></span>
+  </div>
+
+  <button class="btn" onclick="toggleMusic()">Tocar/Pausar Música</button>
+
+  <audio id="bg-music" src="./pasta/11vidas.mp3" autoplay loop></audio>
+
+  <script>
+    let currentIndex = 0;
+    let slides;
+    let interval;
+    const slideDuration = 5000;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? 'block' : 'none';
+      });
+    }
+
+    function startPresentation() {
+      document.getElementById('intro').classList.add('hidden');
+      slides = document.querySelectorAll('.slides img, .slides video');
+      showSlide(currentIndex);
+
+      interval = setInterval(() => {
+        currentIndex++;
+        showSlide(currentIndex);
+
+        if (currentIndex >= slides.length - 1) {
+          clearInterval(interval);
+        }
+      }, slideDuration);
+    }
+
+    function createFloatingImage() {
+      const image = document.createElement('div');
+      image.className = 'floating-image';
+      image.style.backgroundImage = 'url(nel-eva-coracao-medio-mae-magia.jpg?v=1651683494&webp=0.png)';
+      image.style.left = Math.random() * 100 + 'vw';
+      image.style.animationDuration = (9 + Math.random() * 9) + 's';
+      document.getElementById('floating-images').appendChild(image);
+
+      setTimeout(() => image.remove(), 10000);
+    }
+
+    setInterval(createFloatingImage, 300);
+
+    function toggleMusic() {
+      const music = document.getElementById('bg-music');
+      if (music.paused) {
+        music.play();
+      } else {
+        music.pause();
+      }
+    }
+  </script>
+</body>
+</html>
